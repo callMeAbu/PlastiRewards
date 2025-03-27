@@ -4,100 +4,252 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlastiRewards - Earn Rewards While Saving the Planet!</title>
+     <!-- Font Awesome CDN for Icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">PlastiRewards</div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">How It Works</a></li>
-            <li><a href="#">Services</a></li>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlastiRewards</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="images/PR LOGO.png" alt="PlastiRewards Logo" class="logo-img">
+            <span class="logo-text">Plasti<span>Rewards</span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#">Wallet</a></li>
-            <li><a href="#">Get Started</a></li>
-            <li><a href="#">Login/Register</a></li>
+            <li><a href="#" class="cta">Get Started</a></li>
+            <li><a href="#" class="login">Login/Register</a></li>
         </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Earn Rewards While Saving the Planet! 🌍💰</h1>
-        <p>Recycle plastic waste, earn tokens, and use them for utility payments.</p>
-        <div class="ctas">
-            <button class="primary-cta">Start Recycling</button>
-            <button class="secondary-cta">Sign Up Now</button>
-        </div>
-        <div class="real-time-counter">
-            <p>Plastic Collected: <span id="plastic-counter">0</span> kg</p>
-            <p>Rewards Issued: <span id="rewards-counter">0</span> Tokens</p>
-        </div>
-    </section>
+   <!-- Hero Section -->
+<section class="hero">
+    <h1>Earn Rewards While Saving the Planet! 🌍💰</h1>
+    <p>Recycle plastic waste, earn tokens, and use them for utility payments.</p>
+    
+    <div class="ctas">
+        <button class="primary-cta">Start Recycling</button>
+        <button class="secondary-cta">Sign Up Now</button>
+    </div>
 
-    <!-- How It Works Section -->
-    <section class="how-it-works">
-        <h2>How It Works</h2>
-        <div class="steps">
-            <div class="step">
-                <img src="icon-collect.png" alt="Collect Plastic">
-                <h3>Step 1: Collect Plastic Waste ♻️</h3>
-            </div>
-            <!-- Repeat for other steps -->
+    <div class="real-time-counter">
+        <p>♻️ Plastic Collected: <span id="plastic-counter">0</span> kg</p>
+        <p>💎 Rewards Issued: <span id="rewards-counter">0</span> Tokens</p>
+    </div>
+</section>
+
+
+
+
+   <!-- How It Works Section -->
+<section class="how-it-works">
+    <h2>How It Works</h2>
+    <p class="intro-text">
+        Join the revolution! Follow these simple steps to recycle plastic, earn rewards, and contribute to a sustainable future. 🌍💎
+    </p>
+
+    <div class="steps">
+        <!-- Step 1 -->
+        <div class="step">
+            <img src="icon-collect.png" alt="Collect Plastic">
+            <h3>Step 1: Collect Plastic Waste ♻️</h3>
+            <p>Gather plastic bottles, bags, and other waste materials and get them ready for recycling.</p>
         </div>
-    </section>
+
+        <!-- Step 2 -->
+        <div class="step">
+            <img src="icon-deposit.png" alt="Deposit Waste">
+            <h3>Step 2: Deposit at Collection Points 🏪</h3>
+            <p>Find the nearest recycling center or partner drop-off location to deposit your collected plastic.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step">
+            <img src="icon-scan.png" alt="Scan QR Code">
+            <h3>Step 3: Scan & Verify 📲</h3>
+            <p>Use the PlastiRewards app to scan the QR code on your deposit receipt to confirm your contribution.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step">
+            <img src="icon-earn.png" alt="Earn Rewards">
+            <h3>Step 4: Earn PlastiTokens 💰</h3>
+            <p>Receive PlastiTokens in your Web3 wallet as a reward for your recycling efforts.</p>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step">
+            <img src="icon-use.png" alt="Use Tokens">
+            <h3>Step 5: Spend or Trade 🚀</h3>
+            <p>Use your PlastiTokens for utility bills, airtime, shopping, or even trade them on our marketplace.</p>
+        </div>
+    </div>
+</section>
+
 
     <!-- Services Section -->
-    <section class="services">
-        <h2>Services</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="icon-recycle.png" alt="Recycle & Earn">
-                <h3>Recycle & Earn</h3>
-                <p>Convert plastic waste to digital rewards.</p>
-            </div>
-            <!-- Repeat for other services -->
-        </div>
-    </section>
+<section class="services">
+    <h2>Our Services</h2>
+    <p class="intro-text">
+        Explore the range of services we offer—bridging sustainability and digital rewards. ♻️🚀
+    </p>
 
-    <!-- Wallet Section -->
-    <section class="wallet">
-        <h2>Wallet Preview</h2>
-        <p>Token Balance: <span id="token-balance">0</span></p>
-        <!-- Add more wallet details -->
-    </section>
+    <div class="cards">
+        <!-- Service 1: Recycle & Earn -->
+        <div class="card">
+            <img src="icon-recycle.png" alt="Recycle & Earn">
+            <h3>Recycle & Earn ♻️</h3>
+            <p>Convert plastic waste into digital rewards and make an impact.</p>
+        </div>
+
+        <!-- Service 2: Marketplace -->
+        <div class="card">
+            <img src="icon-marketplace.png" alt="Marketplace">
+            <h3>Marketplace 🛒</h3>
+            <p>Spend your PlastiTokens on airtime, utility bills, and more.</p>
+        </div>
+
+        <!-- Service 3: Wallet -->
+        <div class="card">
+            <img src="icon-wallet.png" alt="Wallet">
+            <h3>Secure Wallet 🔐</h3>
+            <p>Manage your earnings with a blockchain-based secure wallet.</p>
+        </div>
+
+        <!-- Service 4: Leaderboard & Rewards -->
+        <div class="card">
+            <img src="icon-leaderboard.png" alt="Leaderboard">
+            <h3>Leaderboard & Rewards 🏆</h3>
+            <p>Climb the ranks and earn extra rewards for top contributions.</p>
+        </div>
+
+        <!-- Service 5: Sustainability Initiatives -->
+        <div class="card">
+            <img src="icon-sustainability.png" alt="Sustainability">
+            <h3>Sustainability Projects 🌍</h3>
+            <p>Support global recycling projects and create a greener world.</p>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Wallet Section -->
+<section id="wallet" class="wallet">
+    <h2>Wallet Preview 🔐</h2>
+    <p class="wallet-intro">
+        Your Web3 Wallet allows you to manage your <strong>PlastiTokens</strong> securely.  
+        Check balances, view transaction history, and redeem rewards. 🚀
+    </p>
+
+    <div class="wallet-container">
+        <div class="wallet-balance">
+            <h3>Token Balance</h3>
+            <p><span id="token-balance">0</span> PLT</p>
+        </div>
+
+        <div class="wallet-actions">
+            <button class="wallet-btn">Deposit</button>
+            <button class="wallet-btn">Withdraw</button>
+            <button class="wallet-btn">Transaction History</button>
+        </div>
+    </div>
+</section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials">
-        <h2>Testimonials</h2>
+<section id="testimonials" class="testimonials">
+    <h2>What Our Users Say 🌟</h2>
+    <div class="testimonial-container">
         <div class="testimonial-slider">
-            <!-- Add testimonials here -->
+            <div class="testimonial">
+                <p>“PlastiRewards has completely changed the way I think about recycling. Earning tokens while saving the planet? Genius!”</p>
+                <h4>- Alex Johnson</h4>
+            </div>
+            <div class="testimonial">
+                <p>“I love how easy it is to convert my plastic waste into digital rewards. The platform is seamless and futuristic.”</p>
+                <h4>- Maria Gomez</h4>
+            </div>
+            <div class="testimonial">
+                <p>“Using my rewards for utility bill payments is a game-changer! Sustainability meets real-world benefits.”</p>
+                <h4>- David Lee</h4>
+            </div>
         </div>
-    </section>
+        <!-- Navigation Buttons -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+</section>
 
-    <!-- Call to Action -->
-    <section class="cta">
-        <h2>Join PlastiRewards Today!</h2>
+
+    <!-- Call to Action Section -->
+<section class="cta">
+    <div class="cta-content">
+        <h2>Join PlastiRewards Today! ♻️🚀</h2>
+        <p>Start recycling, earn rewards, and make a difference for a sustainable future.</p>
         <button class="cta-button">Sign Up & Start Earning</button>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
+
+   <!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <!-- Quick Links -->
         <div class="footer-links">
-            <!-- Add quick links -->
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Wallet</a></li>
+                <li><a href="#">Leaderboard</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
         </div>
-        <div class="social-icons">
-            <!-- Add social media icons -->
-        </div>
-        <div class="contact-info">
-            <!-- Add contact info -->
-        </div>
-        <div class="newsletter">
-            <!-- Add newsletter form -->
-        </div>
-        <p>&copy; 2024 PlastiRewards. All rights reserved.</p>
-    </footer>
 
-    <script src="script.js"></script>
+        <!-- Social Media -->
+        <div class="social-icons">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Email: support@plastirewards.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <p class="copyright">&copy; 2025 PlastiRewards. All rights reserved.</p>
+</footer>
+
+
 </body>
 </html>
