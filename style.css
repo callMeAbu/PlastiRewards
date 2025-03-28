@@ -587,8 +587,14 @@ body {
         flex-direction: column;
     }
 
+    .wallet-actions {
+        display: contents;
+        gap: 20px;
+    }
+
     .wallet-btn {
-        width: 50%;
+        width: 100%;
+        
     }
 }
 
