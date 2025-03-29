@@ -10,9 +10,9 @@ function toggleMenu() {
 
     // Change menu button between ☰ and ✖
     if (navLinks.classList.contains("active")) {
-        menuToggle.innerHTML = "✖"; // Change to close icon
+        menuToggle.innerHTML = "✖"; 
     } else {
-        menuToggle.innerHTML = "☰"; // Change back to hamburger icon
+        menuToggle.innerHTML = "☰"; 
     }
 }
 
@@ -43,24 +43,24 @@ document.getElementById('token-balance').textContent = 150; // Example balance
 
 
 
-// let slideIndex = 0;
+let slideIndex = 0;
 
-// function moveSlide(n) {
-//     const slides = document.querySelectorAll('.testimonial');
-//     slideIndex += n;
+function moveSlide(n) {
+    const slides = document.querySelectorAll('.testimonial');
+    slideIndex += n;
 
-//     if (slideIndex >= slides.length) {
-//         slideIndex = 0;
-//     } else if (slideIndex < 0) {
-//         slideIndex = slides.length - 1;
-//     }
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    } else if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+    }
 
-//     document.querySelector('.testimonial-slider').style.transform = 
-//         `translateX(-${slideIndex * 100}%)`;
-// }
+    document.querySelector('.testimonial-slider').style.transform = 
+        `translateX(-${slideIndex * 100}%)`;
+}
 
-// // Auto-slide every 5 seconds
-// setInterval(() => moveSlide(1), 5000);
+// Auto-slide every 5 seconds
+setInterval(() => moveSlide(1), 5000);
 
 
 // How it works functionality
