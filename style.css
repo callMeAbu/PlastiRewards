@@ -310,6 +310,13 @@ body {
     color: white;
     position: relative;
     overflow: hidden;
+    padding-top: 10%;
+}
+
+.how-it-works h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(0, 255, 170, 0.8);
 }
 
 /* Steps Container */
@@ -348,6 +355,7 @@ body {
     .step img {
         width:100px; /* Reduce size on small screens */
     }
+
 }
 
 
@@ -395,7 +403,10 @@ body {
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
-    .how-it-works h2 { font-size: 2rem; }
+    .how-it-works h2 { font-size: 2rem; 
+        
+            padding-top: 10%;
+        }
     .steps { grid-template-columns: 1fr; }
 
     .step {
@@ -417,6 +428,7 @@ body {
     color: white;
     position: relative;
     overflow: hidden;
+    padding-top: 10%;
 }
 
 /* Glowing Grid Lines */
@@ -496,6 +508,12 @@ body {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+
+    .services {
+    
+        padding-top: 20%;
+    }
+
     .services h2 {
         font-size: 2rem;
     }
@@ -524,6 +542,7 @@ body {
     background: linear-gradient(135deg, rgba(0, 255, 170, 0.15), rgba(0, 0, 0, 0.9));
     color: white;
     margin-top: 80px;
+    padding-top: 10%;
 }
 
 /* Section Title */
@@ -581,6 +600,12 @@ body {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+
+    .wallet {
+
+        padding-top: 20%;
+    }
+
     nav ul {
         flex-direction: column;
         display: none;

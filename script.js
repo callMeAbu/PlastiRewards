@@ -1,9 +1,21 @@
 
 // JavaScript for Mobile Menu 
 
-    function toggleMenu() {
-        document.querySelector('.nav-links').classList.toggle('active');
+function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    const menuToggle = document.getElementById("menuToggle");
+
+    // Toggle the "active" class for menu
+    navLinks.classList.toggle("active");
+
+    // Change menu button between ☰ and ✖
+    if (navLinks.classList.contains("active")) {
+        menuToggle.innerHTML = "✖"; // Change to close icon
+    } else {
+        menuToggle.innerHTML = "☰"; // Change back to hamburger icon
     }
+}
+
 
 
 

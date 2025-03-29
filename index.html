@@ -7,16 +7,6 @@
      <!-- Font Awesome CDN for Icons -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlastiRewards</title>
-    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -26,19 +16,25 @@
             <img src="images/PR LOGO.png" alt="PlastiRewards Logo" class="logo-img">
             <span class="logo-text">Plasti<span>Rewards</span></span>
         </div>
-        <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#">Wallet</a></li>
-            <li><a href="#" class="cta">Get Started</a></li>
-            <li><a href="#" class="login">Login/Register</a></li>
-        </ul>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+               
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#works">How It Works</a></li>
+                <li><a href="#our-services">Services</a></li>
+                <li><a href="#our-wallet">Wallet</a></li>
+                <li><a href="#started" class="cta">Get Started</a></li>
+                <li><a href="#register" class="login">Login/Register</a></li>
+            </ul>
+        
+            <!-- Mobile Menu Toggle Button -->
+            <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">☰</div>
+        </nav>
+        
     </nav>
 
    <!-- Hero Section -->
-<section class="hero">
+<section id="home" class="hero">
     <h1>Earn Rewards While Saving the Planet! 🌍💰</h1>
     <p>Recycle plastic waste, earn tokens, and use them for utility payments.</p>
     
@@ -57,7 +53,7 @@
 
 
    <!-- How It Works Section -->
-   <section class="how-it-works">
+   <section id="works" class="how-it-works">
     <h2>How It Works</h2>
     <p class="intro-text">Turn plastic waste into rewards with a few simple steps.</p>
 
@@ -130,7 +126,7 @@
 
 
     <!-- Services Section -->
-<section class="services">
+<section id="our-services" class="services">
     <h2>Our Services</h2>
     <p class="intro-text">
         Explore the range of services we offer—bridging sustainability and digital rewards. ♻️🚀
@@ -176,7 +172,7 @@
 
 
   <!-- Wallet Section -->
-<section id="wallet" class="wallet">
+<section id="our-wallet" class="wallet">
     <h2>Wallet Preview 🔐</h2>
     <p class="wallet-intro">
         Your Web3 Wallet allows you to manage your <strong>PlastiTokens</strong> securely.  
