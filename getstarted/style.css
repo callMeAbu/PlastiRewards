@@ -1,0 +1,286 @@
+/* Import futuristic font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: radial-gradient(circle at center, #0f172a, #020617);
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: rgba(10, 25, 47, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(0, 255, 170, 0.5);
+    z-index: 1000;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Logo Image */
+.logo-img {
+    height: 50px;
+    width: auto;
+    filter: drop-shadow(0 0 10px rgba(0, 255, 170, 0.7));
+}
+
+/* Logo Text */
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #00ffaa;
+    text-transform: uppercase;
+}
+
+.logo-text span {
+    color: #ff00ff;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* Futuristic Hover Effect */
+.nav-links a:hover {
+    color: #00ffaa;
+    text-shadow: 0 0 10px #00ffaa;
+}
+
+/* Grid-line Hover Effect */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #00ffaa;
+    left: 50%;
+    bottom: -5px;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Call-To-Action Button */
+.cta {
+    background: linear-gradient(45deg, #00ffaa, #0077ff);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta:hover {
+    background: linear-gradient(45deg, #0077ff, #00ffaa);
+    box-shadow: 0 0 10px #00ffaa;
+}
+
+/* Login/Register Button */
+.login {
+    border: 1px solid #ff00ff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.login:hover {
+    background: #ff00ff;
+    color: #020617;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(10, 25, 47, 0.95);
+        backdrop-filter: blur(8px);
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo-img {
+        height: 40px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+/*  start-recycling.css */
+
+.start-recycling-page {
+    padding: 20px;
+}
+
+.hero {
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.how-to-recycle {
+    margin-bottom: 40px;
+}
+
+.how-to-recycle h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.step {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.step-number {
+    display: inline-block;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.accepted-plastics {
+    list-style-type: disc;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.collection-point-map {
+    margin-top: 20px;
+}
+
+.tips-and-guidelines {
+    margin-bottom: 40px;
+}
+
+.tips-and-guidelines h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tips-and-guidelines ul {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+.faq {
+    margin-bottom: 40px;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.get-started {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.signup-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background-color: #367c39;
+}

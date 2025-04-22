@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlastiRewards - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <img src="/images/PRLOGO.png" alt="PlastiRewards Logo" class="logo">
+            <h2>Create Your Account</h2>
+            <form action="/auth/signup" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+            
+            <p>Already have an account? <a href="./signInPage.html"><span>Login </span></a></p>
+        </div>
+        <a href="/"><button type="submit" class="btn">←</button></a>
+    </div>
+
+</body>
+</html>

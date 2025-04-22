@@ -1,0 +1,176 @@
+/* Import futuristic font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: radial-gradient(circle at center, #0f172a, #020617);
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: white;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background Logo */
+body::before {
+    content: "";
+    background: url('/images/PRLOGO.png') no-repeat center;
+    background-size: 300px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* Animated Grid Lines */
+body::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        to right,
+        rgba(0, 255, 170, 0.1) 0px,
+        rgba(0, 255, 170, 0.1) 1px,
+        transparent 2px,
+        transparent 50px
+    ), repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 170, 0.1) 0px,
+        rgba(0, 255, 170, 0.1) 1px,
+        transparent 2px,
+        transparent 50px
+    );
+    z-index: -2;
+    animation: moveGrid 5s linear infinite;
+}
+
+@keyframes moveGrid {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50px); }
+}
+
+/* Centering the Form */
+.auth-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(10, 10, 10, 0.9); /* Dark Glass Effect */
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(0, 255, 170, 0.5);
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 255, 170, 0.8);
+    text-align: center;
+    max-width: 420px;
+    width: 90%;
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 80px; /* Space from the footer */
+}
+
+/* Logo Inside Container */
+.auth-container .logo {
+    width: 120px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+/* Form Fields */
+.auth-container input {
+    width: 85%;
+    padding: 14px;
+    margin: 15px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: white;
+    outline: none;
+}
+
+.auth-container input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Button Styling */
+.auth-container .btn {
+    background: linear-gradient(45deg, #00ffaa, #0066ff);
+    color: black;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.auth-container .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 170, 0.8);
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+
+    background: linear-gradient(45deg, #00ffaa, #0066ff);
+    color: black;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .auth-container {
+        width: 90%;
+        padding: 40px 30px;
+    }
+}
+
+
+
+
+/* dashboard styling */
+
